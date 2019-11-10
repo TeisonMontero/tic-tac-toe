@@ -1,5 +1,5 @@
 body {
-  background-image: url("/img/fondo.svg");
+  background-image: url("../img/fondo.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -59,11 +59,11 @@ body {
 }
 
 .btn-game.X {
-  background-image: url("/img/x.png");
+  background-image: url("../img/x.png");
 }
 
 .btn-game.O {
-  background-image: url("/img/0.png");
+  background-image: url("../img/0.png");
 }
 
 .btn-game:hover {
