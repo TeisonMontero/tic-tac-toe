@@ -1,0 +1,104 @@
+body {
+  background-image: url("/img/fondo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 50px 50px 50px 70px;
+}
+
+.turno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.turno h3 {
+  font-size: 25px;
+  color: #2e2580c2;
+  margin-right: 5px;
+}
+.turno h4 {
+  font-size: 25px;
+  color: #ff00009b;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+}
+
+.btn-game {
+  width: 150px;
+  height: 150px;
+  border: 1.5px solid #ff00007e;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff00;
+  outline: none;
+}
+
+.top {
+  border-top: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.right {
+  border-right: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+.btn-game.X {
+  background-image: url("/img/x.png");
+}
+
+.btn-game.O {
+  background-image: url("/img/0.png");
+}
+
+.btn-game:hover {
+  cursor: pointer;
+}
+
+.border-right {
+  border-right: 5px solid #000;
+}
+
+.mensaje {
+  animation: fadeIn ease 1s;
+}
+.mensaje .msg {
+  background-color: #ff00009b;
+  color: #fff;
+  font-size: 3em;
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+  width: 570px;
+  display: none;
+}
+.mensaje .msg button {
+  background-color: #ffffffe8;
+  color: #ff00009b;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+}
+.mensaje .msg button:active {
+  background-color: #ff00007e;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

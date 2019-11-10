@@ -1,0 +1,96 @@
+.game-board{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 50px 50px 50px 70px;
+}
+
+.turno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3{
+    font-size: 25px;
+    color: $blue;
+    margin-right: 5px;
+  }
+  h4{
+    font-size: 25px;
+    color: $redOpacity;
+  }
+}
+
+.board{
+  display: flex;
+  align-items: center;
+}
+
+%buttom{
+  width: 150px;
+  height: 150px;
+  border: 1.5px solid $red;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $whiteOpacity;
+  outline: none;
+}
+
+.btn-game {
+  @extend %buttom;
+}
+
+.top{
+  border-top: none;
+}
+.left{
+  border-left: none;
+}
+.right{
+  border-right: none;
+}
+.bottom{
+  border-bottom: none;
+}
+
+.btn-game.X {
+  background-image: url("/img/x.png")
+}
+.btn-game.O {
+  background-image: url("/img/0.png");
+}
+.btn-game:hover {
+  cursor: pointer;
+}
+.border-right{
+  border-right: 5px solid $black;
+}
+.mensaje{
+  animation: fadeIn ease 1s;
+  .msg {
+    background-color: $redOpacity;
+    color: $white;
+    font-size: 3em;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    width: 570px;
+    display: none;
+
+    button {
+    background-color: $gray;
+    color: $redOpacity;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    
+    &:active{
+      background-color: $red;
+      color: $white;
+    }
+    }
+  }
+}

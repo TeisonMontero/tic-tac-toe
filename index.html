@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tic-ta-toe</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main class="site-main">
+    <div class="turno">
+      <h3>Turno:</h3>
+      <h4 id='lblTurno'></h4>
+    </div>
+    <div class="board">
+      <div class="game-board">
+        <button cell="0" class="btn-game top left"></button>
+        <button cell="1" class="btn-game top"></button>
+        <button cell="2" class="btn-game top right"></button>
+        <button cell="3" class="btn-game left"></button>
+        <button cell="4" class="btn-game"></button>
+        <button cell="5" class="btn-game right"></button>
+        <button cell="6" class="btn-game left bottom"></button>
+        <button cell="7" class="btn-game bottom "></button>
+        <button cell="8" class="btn-game bottom right"></button>
+     </div>
+     <div class="mensaje">
+       <p class="msg">
+          <label></label>
+          <br>
+          <button onclick="playAgain()">Jugar de nuevo</button>
+        </p>
+      </div>
+     </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
